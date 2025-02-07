@@ -1,0 +1,59 @@
+.
+├── client
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── src
+│   │   ├── App.tsx
+│   │   ├── assets
+│   │   │   └── icons
+│   │   │       └── logo.svg
+│   │   ├── components
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── ProtectedRoute.tsx
+│   │   │   └── PublicRoute.tsx
+│   │   ├── contexts
+│   │   │   ├── AuthContext.tsx
+│   │   │   └── ThemeContext.tsx
+│   │   ├── hooks
+│   │   ├── i18n
+│   │   │   └── config.ts
+│   │   ├── index.css
+│   │   ├── layouts
+│   │   ├── main.tsx
+│   │   ├── pages
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── Login.tsx
+│   │   │   └── Register.tsx
+│   │   ├── services
+│   │   ├── utils
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.js
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── file_structure.txt
+└── server
+    ├── package.json
+    ├── package-lock.json
+    ├── src
+    │   ├── config
+    │   ├── controllers
+    │   │   └── authController.ts
+    │   ├── index.ts
+    │   ├── middlewares
+    │   │   └── validation.ts
+    │   ├── models
+    │   │   └── User.ts
+    │   ├── routes
+    │   │   └── authRoutes.ts
+    │   ├── services
+    │   │   └── emailService.ts
+    │   └── utils
+    └── tsconfig.json
+
+21 directories, 35 files

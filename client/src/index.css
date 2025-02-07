@@ -1,0 +1,44 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme Variables */
+:root {
+  --transition-duration: 0.3s;
+}
+
+:root[class='light'] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #000000;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
+  --accent-color: #3b82f6;
+}
+
+:root[class='dark'] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: #404040;
+  --accent-color: #60a5fa;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color var(--transition-duration),
+              color var(--transition-duration);
+}
+
+/* RTL Support */
+[dir='rtl'] {
+  font-family: 'Cairo', sans-serif;
+}
+
+[dir='ltr'] {
+  font-family: 'Inter', sans-serif;
+}
